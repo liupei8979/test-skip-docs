@@ -55,7 +55,6 @@ function App() {
         document.body.style.overscrollBehavior = 'none'
 
         let rafId: number | null = null
-        let lastScrollTop = 0
 
         const checkAndLockScroll = () => {
             if (rafId) {

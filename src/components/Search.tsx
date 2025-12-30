@@ -10,7 +10,9 @@ interface SearchProps {
 export default function Search({ onClose, docsList }: SearchProps) {
     const navigate = useNavigate()
     const [query, setQuery] = useState('')
-    const [results, setResults] = useState<Array<{ path: string; title: string; file: string }>>([])
+    const [results, setResults] = useState<
+        Array<{ path: string; title: string; file: string; matchType: 'title' | 'content' }>
+    >([])
     const [searchContent, setSearchContent] = useState<Record<string, string>>({})
     const inputRef = useRef<HTMLInputElement>(null)
 
