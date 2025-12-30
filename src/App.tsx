@@ -78,8 +78,6 @@ function App() {
                     window.scrollTo({ top: maxScroll, behavior: 'auto' })
                     return
                 }
-
-                lastScrollTop = scrollTop
             })
         }
 
